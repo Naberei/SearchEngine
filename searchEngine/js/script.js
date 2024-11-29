@@ -63,7 +63,7 @@ function searchGpt(e){
         type: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": "Bearer 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"
+            "Authorization": ""
         },
         data: JSON.stringify({
             "prompt": "Answer the following prompt in the same language (or in german as default) or follow the instruction. Answer in less than 300 tokens. Do not ever answer with wrong informations. If you do not know the answer, then say so: "+value + ".",
@@ -135,7 +135,7 @@ function getWeather(){
             $.ajax({
                 url: "https://api.opencagedata.com/geocode/v1/json",
                 data: {
-                    key: "feb98130f15242cc81e03d86738da70e",
+                    key: "bd445721add44d3089af9a969402ca89",
                     q: state
                 },
                 success: function(response) {
@@ -145,7 +145,7 @@ function getWeather(){
                     url: "https://api.sunrise-sunset.org/json",
                     data: {
                         lat: lat,
-                        lng: long,
+                        lng: lng,
                         date: "today",
                         formatted: 0
                     },
