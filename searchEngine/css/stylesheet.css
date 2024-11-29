@@ -1,0 +1,365 @@
+body {
+    background-image: url("../img/backgroundImage.png") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+
+h1 {
+    color: white !important;
+    font-family: sans-serif;
+    font-size: 5em !important;
+    text-align: center;
+}
+
+#searchBarDiv {
+    width: 600px;
+    margin: 10% auto;
+}
+
+
+#searchBar:hover , #searchBar:focus {
+    box-shadow: 0 0 3px white !important;
+}
+
+.submitButton {
+    width: 120px;
+    height: 40px;
+    border: 0 solid transparent;
+    border-radius: 5px;
+    background-color: rgba(51, 51, 51, 0.486);
+    color: white;
+    margin-top: 40px;
+}
+
+#submitNormal {
+    margin-left:18%;
+    margin-right: 10px !important;
+
+}
+
+#searchBar {
+    margin-top: 100px;
+    border-radius: 50px;
+    color: black;
+    border: 0px solid transparent;
+    box-shadow: none !important;
+    background: url("../img/search.png") no-repeat scroll!important;
+    background-size: 15px 15px !important;
+    background-color: rgba(255, 255, 255, 0.541) !important;
+    padding-left: 50px;
+    background-position: 7px center !important;
+}
+
+#content {
+    width: 672px;
+    height: max-content;
+    background-color: black;
+    margin-left: 5%;
+    margin-top: 3%;
+    border-radius: 20px;
+    color: white;
+    padding: 40px 40px 40px 40px;
+}
+
+a {
+    text-decoration: none;
+    color: #72711b;
+}
+
+.title {
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.description {
+    font-size: 15px;
+    color: rgba(255, 254, 254, 0.274);
+}
+
+p {
+    margin: 0;
+}
+
+.resultDiv {
+    font-family: Arial;
+    margin-top: 10px;
+    backdrop-filter: blur(100px);
+    background-color: rgba(255, 255, 255, 0.185);
+    box-shadow: 0 0 10px rgb(87, 87, 87);
+    border-radius: 20px;
+    padding: 20px 20px 20px 20px;
+}
+
+.link {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.61);
+}
+
+.title:hover {
+    text-decoration: underline;
+}
+
+.resultBar {
+    margin-top: 0 !important;
+}
+
+#numberResults {
+    font-size: 13px;
+    margin: 10px 10px 10px 10px;
+}
+
+#noResults {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#pageBackBtn, #pageForwardBtn, #pageBackBtn img, #pageForwardBtn img {
+    width: 20px;
+    height: 20px;
+}
+
+#pageBackBtn, #pageForwardBtn {
+    background: none;
+    border: 0 solid transparent;
+
+
+}
+
+
+#pageButtons {
+    margin: 0 auto !important;
+    width: fit-content;
+    height: fit-content;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Regeln für mobile Geräte hier */
+    #content {
+        margin-right: 0% !important;
+        background-color: transparent;
+        box-shadow: none;
+        margin: 0 auto;
+    }
+    body {
+        background-image: none!important;
+        background-color: black;
+    }
+    .resultDiv{
+        background-color: rgba(255, 255, 255, 0.493);
+        border-radius: 10px;
+        margin: 5px 5px 5px 5px;
+        padding: 10px 10px 10px 10px;
+    }
+    #contentSearch {
+        margin-top: 80% !important;
+    }
+
+}
+
+.pageLink, .currentPageLink {
+    margin: 0 5px 0 5px;
+}
+
+.pageLink {
+    text-decoration: none;
+}
+
+.pageLink:hover, .currentPageLink:hover {
+
+    text-decoration: underline;
+}
+
+.currentPageLink {
+    font-weight: 700;
+}
+
+#einstellungen {
+    margin: 10px 5px 10px 5px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding: 5px;
+
+}
+
+#suchFilterButton {
+    background: none;
+    border: 0 solid transparent;
+    color: white
+}
+
+#suchFilterButton:hover {
+    box-shadow: 0 0 5px black;
+    border: 1px solid black;
+    background-color: rgb(39, 38, 38);
+}
+
+#gptAnswer ,#weatherDiv{
+    word-wrap: break-word;
+    width: 20vw;
+    height: fit-content;
+    backdrop-filter: blur(100px);
+    box-shadow: 0 0 10px gray;
+    background-color: rgba(255, 255, 255, 0.185);
+    border-radius: 20px;
+    position: absolute;
+    left: 75vw;
+    top: -50%;
+    padding: 1vw 1.5vw 1vw 1vw;
+    font-size: 1.5vw;
+}
+#gptAnswer {
+    
+    min-height: 20vw;
+    
+}
+#weatherDiv{
+    left: 5%;
+    top: 5%;
+    padding: 1vw 1.5vw 1vw 1.5vw;
+    
+}
+
+.gptTitle {
+    text-align: center;
+    color: white;
+    display: inline;
+}
+
+#point1, #point2, #point3 {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+
+#gptAnswerP {
+    color: white;
+    font-size: 2vh;
+}
+
+#titleImg{
+    height: 6vw;
+    width: 8vw;
+    margin: 0 auto;
+    margin-bottom: 0.5vw;
+}
+
+#weatherDiv {
+    color: white;
+    border-radius: 1vw;
+}
+
+#tempDiv {
+    display: flex;
+}
+
+#tempDiv p {
+    margin-top: 1vw;
+    margin-left: 0.5vw;
+}
+
+#localTimeDiv {
+    display: flex;
+    font-size: 1vw;
+}
+
+#localTimeDiv p {
+    margin-left: 0.5vw;
+}
+
+#otherWeather {
+    margin: 1vw auto;
+
+}
+
+#locationP {
+    font-size: 1.4vw;
+}
+
+#currentTemp, #feelTemp {
+    font-size: 2vw;
+}
+#weatherDiv {
+    height: 23vw;
+    width: 20vw;
+    min-width: auto;
+    min-height: auto;
+}
+
+#changeState input {
+    margin-bottom: 1vw;
+    border-radius: 2.5vw;
+    color: black;
+    border: 0px solid transparent;
+    box-shadow: none !important;
+    background: url("../img/search.png") no-repeat scroll!important;
+    background-size: 0.75vw 0.75vw !important;
+    background-color: rgba(255, 255, 255, 0.541) !important;
+    padding-left: 2.5vw;
+    background-position: 0.4vw center !important;
+    font-size: 1vw;
+    height: 2vw !important;
+}
+
+#lastUpdate {
+    font-size: 1vw;
+}
+
+#otherWeather{
+    font-size: 1vw;
+}
+
+#weatherImg {
+    width: 5vw;
+    height: 5vw;
+
+}
+
+#gptInfoDiv {
+    word-wrap: break-word;
+    width: 24vw;
+    height: fit-content;
+    backdrop-filter: blur(100px);
+    box-shadow: 0 0 10px gray;
+    background-color: rgba(255, 255, 255, 0.185);
+    border-radius: 20px;
+    position: fixed;
+    left: 50vw;
+    top: -50%;
+    padding: 1vw 1.5vw 1vw 1vw;
+    font-size: 1vw;
+    
+}
+
+#gptInfoClose {
+    background: none;
+    border: 0 solid transparent;
+    height: fit-content;
+    width: fit-content;
+}
+
+#gptInfoClose img {
+    width: 10px;
+    height: 10px;
+}
+
+#gptInfo {
+    float: right;
+    width: fit-content;
+    height: fit-content;
+    border: 0 solid transparent;
+    background: none;
+}
+
+#gptInfo img {
+    width: 1vw;
+    height: 1vw;
+}
+
+#websiteSearch {
+    font-size: 10px;
+}
